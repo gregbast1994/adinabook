@@ -2,14 +2,28 @@
     <nav class="navbar navbar-dark bg-success mb-2">
         <div class="container">
             <%= link_to 'ADINABOOK', root_url, class: 'navbar-brand' %>
-            <ul class="navbar-nav flex-row">
+            <ul class="navbar-nav flex-row mr-auto">
                 <li class="nav-item active">
                     <%= link_to 'About', about_path, class: 'nav-link' %>
                 </li>
                 <li class="nav-item">
                     <%= link_to 'Contact', contact_path, class: 'nav-link' %>
                 </li>
+                
             </ul>
+            <ul class="navbar-nav flex-row ml-auto">
+                <% unless user_signed_in? %>
+                    <li class="nav-item">
+                        <%= link_to 'Sign in', new_user_session_path, class: 'nav-link' %>
+                    </li>
+                    <li class="nav-item">
+                        <%= link_to 'Register', new_user_registration_path, class: 'nav-link' %>
+                    </li>
+                <% else %>
+                    <%= render 'layouts/account_links' %>
+                <% end %>
+            </ul>
+             
         </div>
     </nav>
 </header>
