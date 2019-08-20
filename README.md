@@ -10,6 +10,7 @@ $ guard init minitest
 ## Tasks
 * Create mockingbird wireframes for views
 * plan, update readme, setup gems & gaurd
+* setup pages controller
 * deploy to heroku
 * Setup Bootstrap CSS & JS.
 * usual header/flash/error partials.
