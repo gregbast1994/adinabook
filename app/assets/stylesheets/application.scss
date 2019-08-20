@@ -1,2 +1,12 @@
 @import 'bootstrap';
 @import 'font-awesome';
+
+header{
+    a.nav-link{
+        margin-right: .5rem;
+    }
+}
+
+pre.debug_dump{
+    margin: 1rem auto;
+}
