@@ -20,7 +20,7 @@ $ guard init minitest
 * model users (Maybe include meta?)
 
 ## Todo
-Everything
+* Inline login form
 
 ## Models
 * USERS - Can create friend requests, messages, events, upload images, tag friends, post statuses and comment on posts, like things.

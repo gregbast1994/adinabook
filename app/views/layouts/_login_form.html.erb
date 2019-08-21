@@ -1,0 +1,6 @@
+<%= form_for(:user, :url => session_path(:user), 
+                    html: { class: 'form-inline'}) do |f| %>
+    <%= f.text_field :email, class: 'form-control mr-1', placeholder: 'you@example.com' %>
+    <%= f.password_field :password, class: 'form-control mr-1', placeholder: 'Password' %>
+    <%= f.submit 'Sign in', class: 'btn btn-warning' %>
+<% end %>
